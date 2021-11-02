@@ -1,0 +1,23 @@
+[package]
+name = "cargo-edit-completion"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "cargo_edit_completion_lib"
+path = "src/lib/lib.rs"
+
+[[bin]]
+name = "cargo_edit_completion"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1.0"
+clap = "3.0.0-beta.5"
+either = "1.6"
+home = "0.5"
+itertools = "0.10"
+regex = "1.5"
+semver = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
